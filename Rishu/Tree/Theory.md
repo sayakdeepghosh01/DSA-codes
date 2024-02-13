@@ -29,4 +29,23 @@
      - Searching: O(log n)
    - **Space Complexity:** O(n) (for recursive stack space)
 
+5. **B-Tree:**
+   - **Explanation:** B-Tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time.
+   - **Time Complexity:**
+     - Search: O(log n)
+     - Insertion: O(log n)
+     - Deletion: O(log n)
+     - Range Query: O(log n + k), where k is the number of elements in the range
+   - **Space Complexity:** O(n), where n is the number of elements in the tree
+
+6. **B+ Tree:**
+   - **Explanation:** B+ Tree is a variation of the B-Tree with all keys in the leaf nodes and leaf nodes connected in a linked list for range queries.
+   - **Time Complexity:**
+     - Search: O(log n)
+     - Insertion: O(log n)
+     - Deletion: O(log n)
+     - Range Query: O(log n + k), where k is the number of elements in the range
+   - **Space Complexity:** O(n), where n is the number of elements in the tree
+
  Each type of tree has its own characteristics and usage scenarios. Binary trees are simple but can be inefficient for certain operations. Threaded binary trees optimize inorder traversal. Binary search trees provide efficient searching, insertion, and deletion in average cases but can become unbalanced in certain scenarios. AVL trees maintain balance, ensuring efficient operations in all cases. The choice of tree type depends on the specific requirements of the application.
+ And both B-Tree and B+ Tree provide efficient searching, insertion, deletion, and range query operations. They have a logarithmic time complexity for these operations, making them suitable for use in databases and file systems where large amounts of data need to be stored and accessed efficiently. The main difference between the two lies in the structure of the tree and the organization of keys in the leaf nodes.
